@@ -14,6 +14,8 @@ The project page will be reached whenever a user clicks on any given item. It wi
 
 
 ## Admin page
+
 The admin page will be where you submit new projects and make pages for them. It will need to be user friendly and easy to understand for our clients.
+
 
 # About me page
