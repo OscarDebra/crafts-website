@@ -1,23 +1,22 @@
 export const cards = [
     {
         id: 1,
+        main_image: "https://picsum.photos/id/10/400/300",
         title: "Card One",
-        description: "This is the first card.",
-        image: "https://picsum.photos/id/10/400/300",
-        link: "/cards/1",
+        short_description: "This is the first card.",
+        after_description: "This is the final product!",
+        before_description: "This is what the chair looked like before"
     },
     {
         id: 2,
+        main_image: "https://picsum.photos/id/20/400/300",
         title: "Card Two",
-        description: "This is the second card.",
-        image: "https://picsum.photos/id/20/400/300",
-        link: "/cards/2",
+        short_description: "This is the second card.",
     },
     {
         id: 3,
+        main_image: "https://picsum.photos/id/30/400/300",
         title: "Card Three",
-        description: "This is the third card.",
-        image: "https://picsum.photos/id/30/400/300",
-        link: "/cards/3",
+        short_description: "This is the third card.",
     },
 ];

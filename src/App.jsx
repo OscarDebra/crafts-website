@@ -1,10 +1,8 @@
-import './App.css'
-import { Card } from "./components/Card"
+import './App.css';
+import { Card } from "./components/Card";
 import { FurnPage } from './components/FurnPage';
-import { cards } from "./data/Cards"
-import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
-
-
+import { cards } from "./data/Cards";
+import { Routes, Route } from 'react-router-dom';
 
 function CardList() {
   return (
@@ -13,9 +11,9 @@ function CardList() {
         <Card
           key={card.id}
           title={card.title}
-          description={card.description}
-          image={card.image}
-          link={card.link}
+          description={card.short_description}
+          image={card.main_image}
+          link={`/cards/${card.id}`}
         />
       ))}
     </div>
@@ -24,11 +22,13 @@ function CardList() {
 
 function App() {
   return (
-    <Routes>
-      <Route path="/" element={<CardList />} />
-      <Route path="/cards/:id" element={<FurnPage />} />
-    </Routes>
+    <div>
+      <Routes>
+        <Route path="/" element={<CardList />} />
+        <Route path="/cards/:id" element={<FurnPage />} />
+      </Routes>
+    </div>
   );
 }
 
-export default App
+export default App;

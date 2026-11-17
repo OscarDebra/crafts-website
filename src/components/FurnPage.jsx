@@ -1,5 +1,19 @@
 import { useParams, Link } from "react-router-dom";
 import { cards } from "../data/Cards";
+import { Carousel } from './Carousel.jsx';
+import { getCardImages } from '../utils/imageLoader';
+
+function Section({ title, description, images }) {
+  if (!description && (!images || images.length === 0)) return null;
+
+  return (
+  <section>
+    <h2>{title}</h2>
+    <Carousel images={images} />
+    <p>{description}</p>
+  </section>
+  );
+}
 
 export function FurnPage() {
   const { id } = useParams();
@@ -16,8 +30,21 @@ export function FurnPage() {
 
   return (
     <div>
-      <h1>Hello</h1>
       <h1>{card.title}</h1>
+      <div>
+        <Section
+        images={getCardImages(card.id, 'after')}
+        title="Final product"
+        description={card.after_description}
+        />
+
+        <Section
+          images={getCardImages(card.id, 'before')}
+          title="Before reworking"
+          description={card.before_description}
+        />
+
+      </div>
     </div>
   );
 }
