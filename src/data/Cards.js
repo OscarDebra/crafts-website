@@ -2,7 +2,7 @@ export const cards = [
     {
         id: 1,
         main_image: "https://picsum.photos/id/10/400/300",
-        title: "Card One",
+        title: "Card One Yo Cheese bet bet STOL OG STOFF",
         short_description: "This is the first card.",
         after_description: "This is the final product!",
         before_description: "This is what the chair looked like before"

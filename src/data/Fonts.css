@@ -1,0 +1,4 @@
+@font-face {
+    font-family: fabricant;
+    src: local("fabricant"), url(../assets/fonts/fabricant.ttf) format("truetype");
+}

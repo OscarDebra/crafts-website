@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { colors } from "../data/Colors";
 
 import "./Card.css";
 
